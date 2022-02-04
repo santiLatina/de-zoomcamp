@@ -1,0 +1,330 @@
+[2022-02-04 02:17:11,306] {processor.py:163} INFO - Started process (PID=59) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:17:11,307] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:17:11,308] {logging_mixin.py:109} INFO - [2022-02-04 02:17:11,308] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:17:19,914] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:17:19,925] {logging_mixin.py:109} INFO - [2022-02-04 02:17:19,924] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:17:20,021] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 8.719 seconds
+[2022-02-04 02:17:50,145] {processor.py:163} INFO - Started process (PID=103) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:17:50,147] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:17:50,148] {logging_mixin.py:109} INFO - [2022-02-04 02:17:50,148] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:17:50,896] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:17:50,904] {logging_mixin.py:109} INFO - [2022-02-04 02:17:50,904] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:17:50,930] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.789 seconds
+[2022-02-04 02:18:21,031] {processor.py:163} INFO - Started process (PID=136) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:18:21,033] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:18:21,034] {logging_mixin.py:109} INFO - [2022-02-04 02:18:21,034] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:18:22,093] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:18:22,104] {logging_mixin.py:109} INFO - [2022-02-04 02:18:22,104] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:18:22,133] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 1.107 seconds
+[2022-02-04 02:18:52,258] {processor.py:163} INFO - Started process (PID=180) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:18:52,260] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:18:52,260] {logging_mixin.py:109} INFO - [2022-02-04 02:18:52,260] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:18:52,985] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:18:52,992] {logging_mixin.py:109} INFO - [2022-02-04 02:18:52,992] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:18:53,012] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.758 seconds
+[2022-02-04 02:19:23,121] {processor.py:163} INFO - Started process (PID=225) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:19:23,122] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:19:23,123] {logging_mixin.py:109} INFO - [2022-02-04 02:19:23,123] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:19:24,172] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:19:24,179] {logging_mixin.py:109} INFO - [2022-02-04 02:19:24,179] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:19:24,200] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 1.084 seconds
+[2022-02-04 02:19:54,311] {processor.py:163} INFO - Started process (PID=260) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:19:54,313] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:19:54,314] {logging_mixin.py:109} INFO - [2022-02-04 02:19:54,314] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:19:55,113] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:19:55,121] {logging_mixin.py:109} INFO - [2022-02-04 02:19:55,121] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:19:55,144] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.837 seconds
+[2022-02-04 02:20:25,232] {processor.py:163} INFO - Started process (PID=305) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:20:25,233] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:20:25,234] {logging_mixin.py:109} INFO - [2022-02-04 02:20:25,234] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:20:25,970] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:20:25,980] {logging_mixin.py:109} INFO - [2022-02-04 02:20:25,979] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:20:26,000] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.772 seconds
+[2022-02-04 02:20:56,088] {processor.py:163} INFO - Started process (PID=340) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:20:56,090] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:20:56,091] {logging_mixin.py:109} INFO - [2022-02-04 02:20:56,091] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:20:57,054] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:20:57,066] {logging_mixin.py:109} INFO - [2022-02-04 02:20:57,065] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:20:57,091] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 1.009 seconds
+[2022-02-04 02:21:27,167] {processor.py:163} INFO - Started process (PID=386) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:21:27,168] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:21:27,169] {logging_mixin.py:109} INFO - [2022-02-04 02:21:27,169] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:21:27,963] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:21:27,971] {logging_mixin.py:109} INFO - [2022-02-04 02:21:27,971] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:21:27,991] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.828 seconds
+[2022-02-04 02:21:58,094] {processor.py:163} INFO - Started process (PID=420) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:21:58,096] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:21:58,097] {logging_mixin.py:109} INFO - [2022-02-04 02:21:58,097] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:21:59,097] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:21:59,107] {logging_mixin.py:109} INFO - [2022-02-04 02:21:59,107] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:21:59,135] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 1.044 seconds
+[2022-02-04 02:22:29,361] {processor.py:163} INFO - Started process (PID=474) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:22:29,363] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:22:29,363] {logging_mixin.py:109} INFO - [2022-02-04 02:22:29,363] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:22:30,078] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:22:30,085] {logging_mixin.py:109} INFO - [2022-02-04 02:22:30,085] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:22:30,105] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.748 seconds
+[2022-02-04 02:23:00,604] {processor.py:163} INFO - Started process (PID=518) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:23:00,607] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:23:00,607] {logging_mixin.py:109} INFO - [2022-02-04 02:23:00,607] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:23:01,402] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:23:01,411] {logging_mixin.py:109} INFO - [2022-02-04 02:23:01,410] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:23:01,431] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.832 seconds
+[2022-02-04 02:23:31,812] {processor.py:163} INFO - Started process (PID=570) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:23:31,814] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:23:31,815] {logging_mixin.py:109} INFO - [2022-02-04 02:23:31,815] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:23:32,576] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:23:32,584] {logging_mixin.py:109} INFO - [2022-02-04 02:23:32,584] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:23:32,604] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.796 seconds
+[2022-02-04 02:24:02,764] {processor.py:163} INFO - Started process (PID=608) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:24:02,765] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:24:02,766] {logging_mixin.py:109} INFO - [2022-02-04 02:24:02,766] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:24:03,485] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:24:03,493] {logging_mixin.py:109} INFO - [2022-02-04 02:24:03,493] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:24:03,515] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.755 seconds
+[2022-02-04 02:24:33,979] {processor.py:163} INFO - Started process (PID=664) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:24:33,981] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:24:33,982] {logging_mixin.py:109} INFO - [2022-02-04 02:24:33,982] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:24:34,694] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:24:34,702] {logging_mixin.py:109} INFO - [2022-02-04 02:24:34,701] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:24:34,721] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.746 seconds
+[2022-02-04 02:25:05,266] {processor.py:163} INFO - Started process (PID=722) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:25:05,271] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:25:05,272] {logging_mixin.py:109} INFO - [2022-02-04 02:25:05,272] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:25:06,061] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:25:06,069] {logging_mixin.py:109} INFO - [2022-02-04 02:25:06,068] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:25:06,087] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.825 seconds
+[2022-02-04 02:25:36,146] {processor.py:163} INFO - Started process (PID=761) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:25:36,148] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:25:36,148] {logging_mixin.py:109} INFO - [2022-02-04 02:25:36,148] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:25:36,913] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:25:36,921] {logging_mixin.py:109} INFO - [2022-02-04 02:25:36,920] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:25:36,940] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.798 seconds
+[2022-02-04 02:26:07,273] {processor.py:163} INFO - Started process (PID=813) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:26:07,274] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:26:07,275] {logging_mixin.py:109} INFO - [2022-02-04 02:26:07,275] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:26:08,058] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:26:08,066] {logging_mixin.py:109} INFO - [2022-02-04 02:26:08,066] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:26:08,085] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.817 seconds
+[2022-02-04 02:26:38,177] {processor.py:163} INFO - Started process (PID=863) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:26:38,178] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:26:38,179] {logging_mixin.py:109} INFO - [2022-02-04 02:26:38,179] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:26:38,940] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:26:38,948] {logging_mixin.py:109} INFO - [2022-02-04 02:26:38,948] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:26:38,968] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.795 seconds
+[2022-02-04 02:27:09,427] {processor.py:163} INFO - Started process (PID=914) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:27:09,429] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:27:09,430] {logging_mixin.py:109} INFO - [2022-02-04 02:27:09,430] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:27:10,148] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:27:10,160] {logging_mixin.py:109} INFO - [2022-02-04 02:27:10,160] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:27:10,188] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.765 seconds
+[2022-02-04 02:27:40,554] {processor.py:163} INFO - Started process (PID=953) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:27:40,555] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:27:40,555] {logging_mixin.py:109} INFO - [2022-02-04 02:27:40,555] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:27:41,316] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:27:41,328] {logging_mixin.py:109} INFO - [2022-02-04 02:27:41,327] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:27:41,349] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.800 seconds
+[2022-02-04 02:28:11,830] {processor.py:163} INFO - Started process (PID=1003) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:28:11,832] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:28:11,832] {logging_mixin.py:109} INFO - [2022-02-04 02:28:11,832] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:28:12,563] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:28:12,571] {logging_mixin.py:109} INFO - [2022-02-04 02:28:12,571] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:28:12,593] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.767 seconds
+[2022-02-04 02:28:42,932] {processor.py:163} INFO - Started process (PID=1062) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:28:42,936] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:28:42,937] {logging_mixin.py:109} INFO - [2022-02-04 02:28:42,937] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:28:45,302] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:28:45,338] {logging_mixin.py:109} INFO - [2022-02-04 02:28:45,338] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:28:45,431] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 2.511 seconds
+[2022-02-04 02:29:15,556] {processor.py:163} INFO - Started process (PID=1162) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:29:15,557] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:29:15,558] {logging_mixin.py:109} INFO - [2022-02-04 02:29:15,558] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:29:16,293] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:29:16,301] {logging_mixin.py:109} INFO - [2022-02-04 02:29:16,301] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:29:16,323] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.771 seconds
+[2022-02-04 02:29:46,727] {processor.py:163} INFO - Started process (PID=1201) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:29:46,728] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:29:46,729] {logging_mixin.py:109} INFO - [2022-02-04 02:29:46,729] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:29:47,735] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:29:47,746] {logging_mixin.py:109} INFO - [2022-02-04 02:29:47,745] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:29:47,774] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 1.052 seconds
+[2022-02-04 02:30:17,849] {processor.py:163} INFO - Started process (PID=1250) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:30:17,851] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:30:17,851] {logging_mixin.py:109} INFO - [2022-02-04 02:30:17,851] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:30:18,598] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:30:18,607] {logging_mixin.py:109} INFO - [2022-02-04 02:30:18,607] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:30:18,627] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.782 seconds
+[2022-02-04 02:30:49,303] {processor.py:163} INFO - Started process (PID=1291) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:30:49,305] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:30:49,306] {logging_mixin.py:109} INFO - [2022-02-04 02:30:49,306] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:30:50,237] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:30:50,245] {logging_mixin.py:109} INFO - [2022-02-04 02:30:50,245] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:30:50,266] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.967 seconds
+[2022-02-04 02:31:20,382] {processor.py:163} INFO - Started process (PID=1339) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:31:20,383] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:31:20,384] {logging_mixin.py:109} INFO - [2022-02-04 02:31:20,384] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:31:21,150] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:31:21,158] {logging_mixin.py:109} INFO - [2022-02-04 02:31:21,157] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:31:21,178] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.800 seconds
+[2022-02-04 02:31:51,670] {processor.py:163} INFO - Started process (PID=1382) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:31:51,672] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:31:51,673] {logging_mixin.py:109} INFO - [2022-02-04 02:31:51,673] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:31:52,430] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:31:52,439] {logging_mixin.py:109} INFO - [2022-02-04 02:31:52,438] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:31:52,459] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.794 seconds
+[2022-02-04 02:32:23,173] {processor.py:163} INFO - Started process (PID=1433) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:32:23,174] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:32:23,175] {logging_mixin.py:109} INFO - [2022-02-04 02:32:23,175] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:32:23,935] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:32:23,944] {logging_mixin.py:109} INFO - [2022-02-04 02:32:23,944] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:32:23,974] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.805 seconds
+[2022-02-04 02:32:54,202] {processor.py:163} INFO - Started process (PID=1472) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:32:54,204] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:32:54,204] {logging_mixin.py:109} INFO - [2022-02-04 02:32:54,204] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:32:54,949] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:32:54,957] {logging_mixin.py:109} INFO - [2022-02-04 02:32:54,957] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:32:54,980] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.782 seconds
+[2022-02-04 02:33:25,122] {processor.py:163} INFO - Started process (PID=1521) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:33:25,123] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:33:25,124] {logging_mixin.py:109} INFO - [2022-02-04 02:33:25,123] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:33:25,885] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:33:25,892] {logging_mixin.py:109} INFO - [2022-02-04 02:33:25,892] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:33:25,914] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.797 seconds
+[2022-02-04 02:33:56,049] {processor.py:163} INFO - Started process (PID=1571) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:33:56,051] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:33:56,052] {logging_mixin.py:109} INFO - [2022-02-04 02:33:56,052] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:33:56,816] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:33:56,824] {logging_mixin.py:109} INFO - [2022-02-04 02:33:56,823] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:33:56,845] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.800 seconds
+[2022-02-04 02:34:27,011] {processor.py:163} INFO - Started process (PID=1625) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:34:27,013] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:34:27,014] {logging_mixin.py:109} INFO - [2022-02-04 02:34:27,014] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:34:27,797] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:34:27,805] {logging_mixin.py:109} INFO - [2022-02-04 02:34:27,804] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:34:27,825] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.818 seconds
+[2022-02-04 02:34:58,403] {processor.py:163} INFO - Started process (PID=1687) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:34:58,405] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:34:58,405] {logging_mixin.py:109} INFO - [2022-02-04 02:34:58,405] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:34:59,112] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:34:59,119] {logging_mixin.py:109} INFO - [2022-02-04 02:34:59,119] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:34:59,139] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.740 seconds
+[2022-02-04 02:35:29,391] {processor.py:163} INFO - Started process (PID=1725) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:35:29,393] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:35:29,393] {logging_mixin.py:109} INFO - [2022-02-04 02:35:29,393] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:35:30,127] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:35:30,138] {logging_mixin.py:109} INFO - [2022-02-04 02:35:30,138] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:35:30,160] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.773 seconds
+[2022-02-04 02:36:00,817] {processor.py:163} INFO - Started process (PID=1776) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:36:00,821] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:36:00,821] {logging_mixin.py:109} INFO - [2022-02-04 02:36:00,821] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:36:01,525] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:36:01,533] {logging_mixin.py:109} INFO - [2022-02-04 02:36:01,533] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:36:01,552] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.739 seconds
+[2022-02-04 02:36:31,719] {processor.py:163} INFO - Started process (PID=1815) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:36:31,721] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:36:31,722] {logging_mixin.py:109} INFO - [2022-02-04 02:36:31,722] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:36:32,442] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:36:32,451] {logging_mixin.py:109} INFO - [2022-02-04 02:36:32,450] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:36:32,469] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.754 seconds
+[2022-02-04 02:37:02,804] {processor.py:163} INFO - Started process (PID=1864) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:37:02,806] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:37:02,806] {logging_mixin.py:109} INFO - [2022-02-04 02:37:02,806] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:37:03,512] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:37:03,520] {logging_mixin.py:109} INFO - [2022-02-04 02:37:03,520] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:37:03,539] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.740 seconds
+[2022-02-04 02:37:34,206] {processor.py:163} INFO - Started process (PID=1914) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:37:34,207] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:37:34,208] {logging_mixin.py:109} INFO - [2022-02-04 02:37:34,208] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:37:34,945] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:37:34,952] {logging_mixin.py:109} INFO - [2022-02-04 02:37:34,952] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:37:34,972] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.771 seconds
+[2022-02-04 02:38:05,118] {processor.py:163} INFO - Started process (PID=1955) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:38:05,120] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:38:05,121] {logging_mixin.py:109} INFO - [2022-02-04 02:38:05,121] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:38:05,869] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:38:05,877] {logging_mixin.py:109} INFO - [2022-02-04 02:38:05,876] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:38:05,896] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.782 seconds
+[2022-02-04 02:38:36,488] {processor.py:163} INFO - Started process (PID=2006) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:38:36,489] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:38:36,490] {logging_mixin.py:109} INFO - [2022-02-04 02:38:36,490] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:38:37,193] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:38:37,203] {logging_mixin.py:109} INFO - [2022-02-04 02:38:37,203] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:38:37,230] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.746 seconds
+[2022-02-04 02:39:07,605] {processor.py:163} INFO - Started process (PID=2049) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:39:07,608] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:39:07,609] {logging_mixin.py:109} INFO - [2022-02-04 02:39:07,609] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:39:08,334] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:39:08,343] {logging_mixin.py:109} INFO - [2022-02-04 02:39:08,342] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:39:08,371] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.770 seconds
+[2022-02-04 02:39:38,816] {processor.py:163} INFO - Started process (PID=2099) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:39:38,818] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:39:38,819] {logging_mixin.py:109} INFO - [2022-02-04 02:39:38,819] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:39:39,640] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:39:39,648] {logging_mixin.py:109} INFO - [2022-02-04 02:39:39,648] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:39:39,668] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.857 seconds
+[2022-02-04 02:40:10,075] {processor.py:163} INFO - Started process (PID=2149) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:40:10,077] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:40:10,077] {logging_mixin.py:109} INFO - [2022-02-04 02:40:10,077] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:40:10,806] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:40:10,814] {logging_mixin.py:109} INFO - [2022-02-04 02:40:10,814] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:40:10,835] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.764 seconds
+[2022-02-04 02:40:41,295] {processor.py:163} INFO - Started process (PID=2189) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:40:41,297] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:40:41,298] {logging_mixin.py:109} INFO - [2022-02-04 02:40:41,298] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:40:41,998] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:40:42,006] {logging_mixin.py:109} INFO - [2022-02-04 02:40:42,006] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:40:42,026] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.735 seconds
+[2022-02-04 02:41:12,391] {processor.py:163} INFO - Started process (PID=2239) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:41:12,392] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:41:12,393] {logging_mixin.py:109} INFO - [2022-02-04 02:41:12,393] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:41:13,249] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:41:13,256] {logging_mixin.py:109} INFO - [2022-02-04 02:41:13,256] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:41:13,276] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.890 seconds
+[2022-02-04 02:41:43,689] {processor.py:163} INFO - Started process (PID=2278) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:41:43,690] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:41:43,691] {logging_mixin.py:109} INFO - [2022-02-04 02:41:43,691] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:41:44,429] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:41:44,438] {logging_mixin.py:109} INFO - [2022-02-04 02:41:44,437] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:41:44,459] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.774 seconds
+[2022-02-04 02:42:14,586] {processor.py:163} INFO - Started process (PID=2326) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:42:14,587] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:42:14,588] {logging_mixin.py:109} INFO - [2022-02-04 02:42:14,588] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:42:15,321] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:42:15,329] {logging_mixin.py:109} INFO - [2022-02-04 02:42:15,329] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:42:15,350] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.769 seconds
+[2022-02-04 02:42:45,467] {processor.py:163} INFO - Started process (PID=2364) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:42:45,469] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:42:45,470] {logging_mixin.py:109} INFO - [2022-02-04 02:42:45,469] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:42:46,186] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:42:46,194] {logging_mixin.py:109} INFO - [2022-02-04 02:42:46,193] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:42:46,214] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.751 seconds
+[2022-02-04 02:43:16,799] {processor.py:163} INFO - Started process (PID=2413) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:43:16,800] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:43:16,801] {logging_mixin.py:109} INFO - [2022-02-04 02:43:16,801] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:43:17,530] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:43:17,538] {logging_mixin.py:109} INFO - [2022-02-04 02:43:17,538] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:43:17,558] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.763 seconds
+[2022-02-04 02:43:47,669] {processor.py:163} INFO - Started process (PID=2453) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:43:47,671] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:43:47,672] {logging_mixin.py:109} INFO - [2022-02-04 02:43:47,672] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:43:48,425] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:43:48,433] {logging_mixin.py:109} INFO - [2022-02-04 02:43:48,433] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:43:48,453] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.788 seconds
+[2022-02-04 02:44:18,523] {processor.py:163} INFO - Started process (PID=2503) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:44:18,525] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:44:18,525] {logging_mixin.py:109} INFO - [2022-02-04 02:44:18,525] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:44:19,244] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:44:19,255] {logging_mixin.py:109} INFO - [2022-02-04 02:44:19,255] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:44:19,283] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.764 seconds
+[2022-02-04 02:44:49,678] {processor.py:163} INFO - Started process (PID=2550) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:44:49,680] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:44:49,681] {logging_mixin.py:109} INFO - [2022-02-04 02:44:49,681] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:44:50,438] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:44:50,446] {logging_mixin.py:109} INFO - [2022-02-04 02:44:50,446] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:44:50,465] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.792 seconds
+[2022-02-04 02:45:20,531] {processor.py:163} INFO - Started process (PID=2591) to work on /opt/airflow/dags/homework.py
+[2022-02-04 02:45:20,535] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework.py for tasks to queue
+[2022-02-04 02:45:20,535] {logging_mixin.py:109} INFO - [2022-02-04 02:45:20,535] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework.py
+[2022-02-04 02:45:21,298] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_hw']) retrieved from /opt/airflow/dags/homework.py
+[2022-02-04 02:45:21,306] {logging_mixin.py:109} INFO - [2022-02-04 02:45:21,306] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-04 02:45:21,328] {processor.py:171} INFO - Processing /opt/airflow/dags/homework.py took 0.801 seconds
