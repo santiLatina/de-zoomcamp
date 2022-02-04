@@ -1,5 +1,0 @@
-Para conectarse a la base de datos: pgcli -h localhost -p 5432 -u root -d ny_taxi
-Con \dt puedo ver las tablas que cree en la bd. 
-Con \d nombre_tabla puedo ver la tabla
-
-dataset: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
