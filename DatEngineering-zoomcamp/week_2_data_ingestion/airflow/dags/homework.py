@@ -15,20 +15,15 @@ import pyarrow.parquet as pq
 
 PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
 BUCKET = os.environ.get("GCP_GCS_BUCKET")
+BIGQUERY_DATASET = os.environ.get("BIGQUERY_DATASET", 'trips_data_all')
 
-#https://nyc-tlc.s3.amazonaws.com/trip+data/fhv_tripdata_2019-01.csv
-
-AIRFLOW_HOME = os.environ.get("AIRFLOW_HOME", "/opt/airflow")
+AIRFLOW_HOME = os.environ.get("AIRFLOW_HOME", "/opt/airflow/")
 
 URL_PREFIX = "https://s3.amazonaws.com/nyc-tlc/trip+data"
 URL_TEMPLATE = URL_PREFIX + "/yellow_tripdata_{{ execution_date.strftime(\'%Y-%m\') }}.csv"
 
-
-OUTPUT_FILE_TEMPLATE = AIRFLOW_HOME + "/output_{{ execution_date.strftime(\'%Y-%m\') }}.csv"
-OUTPUT_FILE_PARQUET = OUTPUT_FILE_TEMPLATE.replace('.csv', '.parquet')
-
-#parquet_file = "/output_{{ execution_date.strftime(\'%Y-%m\') }}.csv").replace('.csv', '.parquet')
-#BIGQUERY_DATASET = os.environ.get("BIGQUERY_DATASET", 'trips_data_all')
+OUTPUT_FILE = "yellow_tripdata_{{ execution_date.strftime(\'%Y-%m\') }}.csv"
+OUTPUT_FILE_PARQUET = OUTPUT_FILE.replace('.csv', '.parquet')
 
 
 def format_to_parquet(src_file):
@@ -63,7 +58,7 @@ def upload_to_gcs(bucket, object_name, local_file):
 
 default_args = {
     "owner": "airflow",
-    "start_date": datetime(2019, 12, 1),
+    "start_date": datetime(2019, 1, 1),
     "depends_on_past": False,
     "retries": 1,
 }
@@ -71,24 +66,24 @@ default_args = {
 # NOTE: DAG declaration - using a Context Manager (an implicit way)
 with DAG(
     dag_id="data_ingestion_gcs_dag_hw",
-    end_date = datetime(2020,7,1),
+    end_date = datetime(2021, 12, 1),
     schedule_interval="0 0 2 * *",
     default_args=default_args,
     catchup=True,
-    max_active_runs=1,
+    max_active_runs=2,
     tags=['dtc-de'],
 ) as dag:
 
     download_dataset_task_hw = BashOperator(
         task_id="download_dataset_task_hw",
-        bash_command=f"curl -sSL {URL_TEMPLATE} > {OUTPUT_FILE_TEMPLATE}"
+        bash_command=f"curl -sSL {URL_TEMPLATE} > {AIRFLOW_HOME}/{OUTPUT_FILE}"
     )
 
     format_to_parquet_task_hw = PythonOperator(
         task_id="format_to_parquet_task_hw",
         python_callable=format_to_parquet,
         op_kwargs={
-            "src_file": f"{OUTPUT_FILE_TEMPLATE}",
+            "src_file": f"{AIRFLOW_HOME}/{OUTPUT_FILE}",
         },
     )
 
@@ -99,30 +94,28 @@ with DAG(
         op_kwargs={
             "bucket": BUCKET,
             "object_name": f"raw/{OUTPUT_FILE_PARQUET}",
-            "local_file": f"{OUTPUT_FILE_PARQUET}",
+            "local_file": f"{AIRFLOW_HOME}/{OUTPUT_FILE_PARQUET}",
         },
     )
 
     clean_disk = BashOperator(
         task_id="clean_disk",
-        bash_command=f"rm {OUTPUT_FILE_TEMPLATE} {OUTPUT_FILE_PARQUET}",
+        bash_command=f"rm {AIRFLOW_HOME}/{OUTPUT_FILE} {AIRFLOW_HOME}/{OUTPUT_FILE_PARQUET}",
     )
 
-    download_dataset_task_hw >> format_to_parquet_task_hw >> local_to_gcs_task_hw >> clean_disk
+    bigquery_external_table_task = BigQueryCreateExternalTableOperator(
+        task_id="bigquery_external_table_task",
+        table_resource={
+            "tableReference": {
+                "projectId": PROJECT_ID,
+                "datasetId": BIGQUERY_DATASET,
+                "tableId": "trip_taxi_table",
+            },
+            "externalDataConfiguration": {
+                "sourceFormat": "PARQUET",
+                "sourceUris": [f"gs://{BUCKET}/raw/{OUTPUT_FILE_PARQUET}"],
+            },
+        },
+    )
 
-    #bigquery_external_table_task_hw = BigQueryCreateExternalTableOperator(
-    #    task_id="bigquery_external_table_task_hw",
-    #    table_resource={
-    #        "tableReference": {
-    #            "projectId": PROJECT_ID,
-    #            "datasetId": BIGQUERY_DATASET,
-    #            "tableId": "external_table",
-    #        },
-    #        "externalDataConfiguration": {
-    #            "sourceFormat": "PARQUET",
-    #            "sourceUris": [f"gs://{BUCKET}/raw/{parquet_file}"],
-    #        },
-    #    },
-    #)
-
-    #download_dataset_task_hw >> format_to_parquet_task_hw >> local_to_gcs_task_hw >> bigquery_external_table_task_hw
+    download_dataset_task_hw >> format_to_parquet_task_hw >> local_to_gcs_task_hw >> clean_disk >> bigquery_external_table_task

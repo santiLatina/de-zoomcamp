@@ -15,16 +15,14 @@ import pyarrow.parquet as pq
 
 PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
 BUCKET = os.environ.get("GCP_GCS_BUCKET")
+BIGQUERY_DATASET = os.environ.get("BIGQUERY_DATASET", 'trips_data_all')
 
-#https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv
-
-AIRFLOW_HOME = os.environ.get("AIRFLOW_HOME", "/opt/airflow")
-
+AIRFLOW_HOME = os.environ.get("AIRFLOW_HOME", "opt/airflow")
 
 URL_TEMPLATE = "https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv"
 
-OUTPUT_FILE_TEMPLATE = AIRFLOW_HOME + "/taxi+_zone_lookup.csv"
-OUTPUT_FILE_PARQUET = OUTPUT_FILE_TEMPLATE.replace('.csv', '.parquet')
+OUTPUT_FILE = "taxi_zone_lookup.csv" 
+OUTPUT_FILE_PARQUET = OUTPUT_FILE.replace('.csv', '.parquet')
 
 
 
@@ -70,21 +68,21 @@ with DAG(
     dag_id="data_ingestion_taxi_zone",
     schedule_interval="@once",
     default_args=default_args,
-    max_active_runs=2,
+    max_active_runs=1,
     catchup=True,
     tags=['dtc-de'],
 ) as dag:
 
     download_dataset_taxi_zone = BashOperator(
         task_id="download_dataset_taxi_zone",
-        bash_command=f"curl -sS {URL_TEMPLATE} > {OUTPUT_FILE_TEMPLATE}"
+        bash_command=f"curl -sS {URL_TEMPLATE} > {AIRFLOW_HOME}/{OUTPUT_FILE}"
     )
 
     format_to_parquet_taxi_zone = PythonOperator(
         task_id="format_to_parquet_taxi_zone",
         python_callable=format_to_parquet,
         op_kwargs={
-            "src_file": f"{OUTPUT_FILE_TEMPLATE}",
+            "src_file": f"{AIRFLOW_HOME}/{OUTPUT_FILE}",
         },
     )
 
@@ -95,13 +93,28 @@ with DAG(
         op_kwargs={
             "bucket": BUCKET,
             "object_name": f"raw/{OUTPUT_FILE_PARQUET}",
-            "local_file": f"{OUTPUT_FILE_PARQUET}",
+            "local_file": f"{AIRFLOW_HOME}/{OUTPUT_FILE_PARQUET}",
         },
     )
 
     clean_disk = BashOperator(
         task_id="clean_disk",
-        bash_command=f"rm {OUTPUT_FILE_TEMPLATE} {OUTPUT_FILE_PARQUET}",
+        bash_command=f"rm {AIRFLOW_HOME}/{OUTPUT_FILE} {AIRFLOW_HOME}/{OUTPUT_FILE_PARQUET}",
     )
 
-    download_dataset_taxi_zone >> format_to_parquet_taxi_zone >> local_to_gcs_taxi_zone >> clean_disk
+    bigquery_external_table_task = BigQueryCreateExternalTableOperator(
+        task_id="bigquery_external_table_task",
+        table_resource={
+            "tableReference": {
+                "projectId": PROJECT_ID,
+                "datasetId": BIGQUERY_DATASET,
+                "tableId": "zone_table",
+            },
+            "externalDataConfiguration": {
+                "sourceFormat": "PARQUET",
+                "sourceUris": [f"gs://{BUCKET}/raw/{OUTPUT_FILE_PARQUET}"],
+            },
+        },
+    )
+
+    download_dataset_taxi_zone >> format_to_parquet_taxi_zone >> local_to_gcs_taxi_zone >> clean_disk >> bigquery_external_table_task
