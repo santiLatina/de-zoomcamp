@@ -1,0 +1,125 @@
+Question 1:
+What is count for fhv vehicles data for year 2019
+Can load the data for cloud storage and run a count(*)
+
+SELECT COUNT(*) FROM `trips_data_all.fhv_native_table`;
+-42084899
+
+Question 2:
+How many distinct dispatching_base_num we have in fhv for 2019
+Can run a distinct query on the table from question 1
+
+SELECT COUNT(DISTINCT dispatching_base_num) FROM `trips_data_all.fhv_native_table`;
+-792
+
+Question 3:
+Best strategy to optimise if query always filter by dropoff_datetime and order by dispatching_base_num
+Review partitioning and clustering video.
+We need to think what will be the most optimal strategy to improve query performance and reduce cost.
+
+-Clustering because the amount of data is less dan 1GB.
+
+Question 4:
+What is the count, estimated and actual data processed for query which counts trip between 2019/01/01 and 2019/03/31 for dispatching_base_num B00987, B02060, B02279
+Create a table with optimized clustering and partitioning, and run a count(*). Estimated data processed can be found in top right corner and actual data processed can be found after the query is executed.
+
+From partitioned table:
+
+SELECT COUNT(*) FROM `trips_data_all.fhv_partitioned_table`
+WHERE  dropoff_datetime BETWEEN '2019-01-01' AND '2019-03-31'
+AND dispatching_base_num in ('B00987', 'B02060', 'B02279');
+
+-This query will process 643 MiB when run.
+-Query complete (0.6 sec elapsed, 643 MB processed)
+-Result: 26558
+
+From clustered table:
+
+SELECT COUNT(*) FROM `trips_data_all.fhv_clustered_table`
+WHERE  dropoff_datetime BETWEEN '2019-01-01' AND '2019-03-30'
+AND dispatching_base_num in ('B00987', 'B02060', 'B02279');
+
+-This query will process 643 MiB when run.
+-Query complete (0.4 sec elapsed, 142.4 MB processed)
+-26434
+
+
+Question 5:
+What will be the best partitioning or clustering strategy when filtering on dispatching_base_num and SR_Flag
+Review partitioning and clustering video. Clustering cannot be created on all data types.
+
+There are 43 disctincts SR_Flag. And 792 differents dispatching_base_num. 
+In less than 1GB. Is better clustering because that.
+
+Clustering over partitioning
+• We preffer clustering when partition results into a small amount of data per partition 
+(approximately less than 1GB)
+• Partition results in a large number of partitios beyond the limits on partitioned tables (4000).
+• Partition results in your mutation operations modifying the majority of partitions in the table
+frequently (ex: every few minutes).
+
+
+
+Question 6:
+What improvements can be seen by partitioning and clustering for data size less than 1 GB
+Partitioning and clustering also creates extra metadata.
+Before query execution this metadata needs to be processed.
+
+Table with data size <1GB don't show significant improvement with partitioning and clustering.
+And add significan cost, because partitioning and clustering tables incur metadata reads and 
+metadata maintence.
+
+(Not required) Question 7:
+In which format does BigQuery save data
+Review big query internals video.
+- Columnar format
+
+
+
+--/////////////////////////////////////// QUERYS ////////////////////////////////////////////--
+--  Preparing Stuff  --
+-- Creating the external table from gcs
+CREATE OR REPLACE EXTERNAL TABLE `trips_data_all.fhv_table`
+OPTIONS (
+  format = 'parquet',
+  uris = ['gs://dtc_data_lake_robotic-tiger-338715/raw/fhv_tripdata_2019-*.parquet']
+);
+
+-- Creating native table for fhv data
+CREATE OR REPLACE TABLE trips_data_all.fhv_native_table AS
+SELECT * FROM trips_data_all.fhv_table;
+
+-- Controling if all data is charged 
+SELECT FORMAT_DATE("%b %Y", pickup_datetime) AS ym, count(*) AS cnt FROM `trips_data_all.fhv_native_table` GROUP BY ym;
+
+
+--  Question 1  --
+SELECT COUNT(*) FROM `trips_data_all.fhv_native_table`;
+
+--  Question 2  --
+SELECT COUNT(DISTINCT dispatching_base_num) FROM `trips_data_all.fhv_native_table`;
+
+--  Question 4  --
+CREATE OR REPLACE TABLE `trips_data_all.fhv_partitioned_table`
+PARTITION BY DATE(pickup_datetime)
+AS SELECT * FROM `trips_data_all.fhv_native_table`;
+
+CREATE OR REPLACE TABLE `trips_data_all.fhv_clustered_table`
+PARTITION BY DATE(pickup_datetime)
+CLUSTER BY dispatching_base_num
+AS SELECT * FROM `trips_data_all.fhv_partitioned_table`;
+
+--Count from partitioned table
+SELECT COUNT(*) FROM `trips_data_all.fhv_partitioned_table`
+WHERE  dropoff_datetime BETWEEN '2019-01-01' AND '2019-03-31'
+AND dispatching_base_num in ('B00987', 'B02060', 'B02279');
+
+--Same count from clustered table
+SELECT COUNT(*) FROM `trips_data_all.fhv_clustered_table`
+WHERE  dropoff_datetime BETWEEN '2019-01-01' AND '2019-03-30'
+AND dispatching_base_num in ('B00987', 'B02060', 'B02279');
+
+--  Question 5  --
+SELECT COUNT(DISTINCT SR_Flag) FROM `robotic-tiger-338715.trips_data_all.fhv_partitioned_table`;
+SELECT COUNT(DISTINCT dispatching_base_num) FROM `robotic-tiger-338715.trips_data_all.fhv_partitioned_table`;
+
