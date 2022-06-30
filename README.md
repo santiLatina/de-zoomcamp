@@ -39,3 +39,5 @@ dbt models
 Testing and documenting
 Deployment to the cloud and locally
 Visualising the data with google data studio and metabase
+
+This week is on https://github.com/santiLatina/dbt_de_zoomcamp
